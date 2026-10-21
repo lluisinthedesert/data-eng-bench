@@ -189,3 +189,7 @@ Aggregated daily summary using quality-filtered data.
 ## Guidelines
 
 - Use MAX(order_date) from the sales data as the reference date for time-elapsed calculations like days_since_order (do NOT use CURRENT_DATE — the data may not extend to the present day)
+
+## Output Location
+
+For DuckDB, materialize all seven output models in `main_incremental_analytics` (use `schema='incremental_analytics'` with the supplied project).
